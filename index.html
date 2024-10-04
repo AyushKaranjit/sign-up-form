@@ -6,12 +6,103 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Sign-up Form</title>
   </head>
   <body>
     <div class="container">
-      <div class="bg"></div>
-      <div class="content"></div>
+      <div class="bg">
+        <div class="logo">
+          <img src="images/logo.png" alt="logo" />
+          <p>LOGO</p>
+        </div>
+        <div>
+          <footer>
+            <p>
+              Photo by
+              <a
+                href="https://unsplash.com/@kellysikkema?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                id="credit"
+                >Kelly Sikkema</a
+              >
+              on
+              <a
+                href="https://unsplash.com/photos/person-writing-on-white-paper-ia1p6fqftnQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                id="credit"
+                >Unsplash</a
+              >
+            </p>
+          </footer>
+        </div>
+      </div>
+      <div class="content-container">
+        <div class="top-text">
+          <h1>Create Account</h1>
+          <p>Get started with us today</p>
+        </div>
+        <div class="form-container">
+          <form
+            id="signup-form"
+            action="https://httpbin.org/post"
+            method="post"
+          >
+            <div class="name-container">
+              <div class="field">
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" name="first_name" required />
+              </div>
+              <div class="field">
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last_name" required />
+              </div>
+            </div>
+            <div class="name-container">
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="field">
+                <label for="phone_number">Phone number</label>
+                <input
+                  type="number"
+                  id="phone_number"
+                  name="phone_number"
+                  required
+                />
+              </div>
+            </div>
+            <div class="name-container">
+              <div class="field">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required />
+              </div>
+              <div class="field">
+                <label for="confirm_password">Confirm Password</label>
+                <input
+                  type="password"
+                  id="confirm_password"
+                  name="confirm_password"
+                  required
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="btn-container">
+          <button class="btn" type="submit">Create Account</button>
+        </div>
+        <div class="bottom-text">
+          <p>
+            Already have an account?
+            <a href="https://www.youtube.com/watch?v=F0GYEj_jhWY" class="link"
+              >Sign In</a
+            >
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
